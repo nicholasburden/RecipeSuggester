@@ -4,7 +4,7 @@
 
 A dark, clean, modern single-page app that suggests recipes based on the
 ingredients you have. Pick ingredients from an autocomplete dropdown (with
-pictures), and the app ranks 25 built-in recipes by how close you are to a
+pictures), and the app ranks 100 built-in recipes by how close you are to a
 complete meal — then shows you the full recipe.
 
 ## Features
@@ -23,8 +23,8 @@ complete meal — then shows you the full recipe.
   calories, an ingredient checklist marking what you have and what you're
   missing, numbered method steps, and similar-recipe recommendations.
 - **Persistence** — your ingredient list is saved to `localStorage`.
-- **Fully offline** — ingredient and recipe data (88 ingredients,
-  25 recipes) is bundled; no APIs, no flaky image URLs.
+- **Fully offline** — ingredient and recipe data (206 ingredients,
+  100 recipes) is bundled; no APIs, no flaky image URLs.
 
 ## Getting started
 
