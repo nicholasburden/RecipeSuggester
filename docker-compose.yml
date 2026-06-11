@@ -4,6 +4,10 @@ services:
     image: recipe-suggester:latest
     container_name: recipe-suggester
     restart: unless-stopped
+    ports:
+      # Direct IP:port access (DNS-less clients); Caddy also proxies
+      # recipe-suggester.servy.lan on the caddy_shared network.
+      - "3002:80"
     networks:
       - caddy_shared
 
