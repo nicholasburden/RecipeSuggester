@@ -1,0 +1,14 @@
+services:
+  recipe-suggester:
+    build: .
+    image: recipe-suggester:latest
+    container_name: recipe-suggester
+    restart: unless-stopped
+    networks:
+      - caddy_shared
+
+networks:
+  # Shared with the Caddy stack at ~/caddy/compose.yaml, which reverse-proxies
+  # http://recipe-suggester.servy.lan to this service by container name.
+  caddy_shared:
+    external: true
